@@ -17,7 +17,7 @@ public class Tarea {
         this.titulo = titulo;
     }
 
-    public String getPrioridad(){
+    public int getPrioridad(){
         return prioridad;
     }
 
