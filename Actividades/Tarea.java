@@ -2,9 +2,9 @@ package Actividades;
 
 public class Tarea {
     private String titulo;
-    private String prioridad;
+    private int prioridad;
 
-    public Tarea(String tarea, String priotidad){
+    public Tarea(String titulo, int prioridad){
         this.titulo = titulo;
         this.prioridad = prioridad;
     }
@@ -21,7 +21,7 @@ public class Tarea {
         return prioridad;
     }
 
-    public void setPrioridad(String prioridad){
+    public void setPrioridad(int prioridad){
         this.prioridad = prioridad;
     }
 
