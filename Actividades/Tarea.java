@@ -26,6 +26,6 @@ public class Tarea {
     }
 
     public String toString(){
-        return this.titulo + " : " + this.prioridad;
+        return getTitulo() + " : " + getPrioridad();
     }
 }
