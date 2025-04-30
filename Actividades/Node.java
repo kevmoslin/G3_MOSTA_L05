@@ -20,4 +20,8 @@ public class Node<T> {
     public Node<T> getSiguiente(){
         return siguiente;
     }
+
+    public void setPrioridad(Node<T> siguiente){
+        this.siguiente = siguiente;
+    }
 }
