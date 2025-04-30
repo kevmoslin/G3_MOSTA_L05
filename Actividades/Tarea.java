@@ -24,4 +24,8 @@ public class Tarea {
     public void setPrioridad(String prioridad){
         this.prioridad = prioridad;
     }
+
+    public String toString(){
+        return this.titulo + " : " + this.prioridad;
+    }
 }
