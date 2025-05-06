@@ -13,13 +13,13 @@ public class Main {
         gestor.imprimirTareas();
 
         System.out.println("\nEliminando.....");
-        gestor.eliminarTarea(new Tarea("envia notificacion", 5));
+        gestor.eliminarTarea(new Tarea("pedido", 1));
 
         System.out.println("\nTareas despues de Eliminar");
         gestor.imprimirTareas();
 
         System.out.println("\nBuscando tarea....");
-        Tarea buscar = new Tarea("pedido", 1);
+        Tarea buscar = new Tarea("revisar", 3);
         boolean existe = gestor.contieneTarea(buscar);
         System.out.println("¿la tarea existe?: " + existe);
 
