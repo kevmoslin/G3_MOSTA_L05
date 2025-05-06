@@ -1,6 +1,6 @@
 package Actividades;
 
-public class Tarea {
+public class Tarea implements Comparable<Tarea> {
     private String titulo;
     private int prioridad;
 
@@ -23,6 +23,11 @@ public class Tarea {
 
     public void setPrioridad(int prioridad){
         this.prioridad = prioridad;
+    }
+
+
+    public int compareTo(Tarea otra){
+        return Integer.compare(this.prioridad, otra.prioridad);
     }
 
     public String toString(){
