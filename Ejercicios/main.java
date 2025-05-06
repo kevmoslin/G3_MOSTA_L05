@@ -31,5 +31,9 @@ public class main {
 
         boolean iguales = Metodos.sonIguales(lista1, lista2);
         System.out.println("¿las dos listas con iguales?: " + iguales);
+
+        Node<Integer> listaConcatenada = Metodos.concatenarListas(lista1, lista2);
+        System.out.println("lista concatenada: ");
+        Metodos.imprimirLista(listaConcatenada);
     }
 }
