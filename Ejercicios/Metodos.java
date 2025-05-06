@@ -51,7 +51,25 @@ public class Metodos {
     }
 
     public static <T> boolean sonIguales(Node<T> head1, Node<T> head2){
+        int tamañolista1 = contarNodos(head1);
+        int tamañolista2 = contarNodos(head2);
 
+        if (tamañolista1 != tamañolista2) {
+            return false;
+        }
+
+        Node<T> actual1 = head1;
+        Node<T> actual2 = head2;
+
+        while (actual1 != null) {
+            if (!actual1.data.equals(actual2.data)) {
+                return false;
+            }
+            actual1 = actual1.siguiente;
+            actual2 = actual2.siguiente;
+        }
+
+        return true;
     }
 
     public static <T> Node<T> concatenarListas(Node<T> head1, Node<T> head2){
