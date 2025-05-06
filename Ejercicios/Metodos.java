@@ -73,7 +73,15 @@ public class Metodos {
     }
 
     public static <T> Node<T> concatenarListas(Node<T> head1, Node<T> head2){
-
+        if (head1 == null) {
+            return head2;
+        }
+        Node<T> actual = head1;
+        while (actual.siguiente != null) {
+            actual = actual.siguiente;
+        }
+        actual.siguiente = head2;
+        return head1;
     }
 
     public static <T> void imprimirLista(Node<T> head){
