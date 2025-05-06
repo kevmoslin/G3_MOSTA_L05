@@ -13,7 +13,7 @@ public class Main {
         gestor.imprimirTareas();
 
         System.out.println("\nEliminando.....");
-        gestor.eliminarTarea(new Tarea("envia norificacion", 5));
+        gestor.eliminarTarea(new Tarea("envia notificacion", 5));
 
         System.out.println("\nTareas despues de Eliminar");
         gestor.imprimirTareas();
