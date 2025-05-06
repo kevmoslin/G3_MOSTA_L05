@@ -4,12 +4,21 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Metodos {
+
     public static <T> boolean buscarElemento(List<T> lista, T valor){
 
     }
 
-    public static <T> List<T> invertirLista(List<T> lista){
-
+    public static <T> Node<T> invertirListaEnlazada(Node<T> head){
+        Node<T> prev = null;
+        Node<T> actual = head;
+        while (actual != null) {
+            Node<T> sigue = actual.siguiente;
+            actual.siguiente = prev;
+            prev = actual;
+            actual = sigue;
+        }
+        return prev;
     }
 
     public static <T> void insertarAlFinal(Node<T> head, T valor) {
@@ -29,6 +38,6 @@ public class Metodos {
     }
 
     public static <T> void imprimirLista(Node<T> head){
-        
+
     }
 }
