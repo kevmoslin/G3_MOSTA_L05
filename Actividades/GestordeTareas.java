@@ -21,7 +21,24 @@ public class GestordeTareas<T extends Comparable<T>> {
     }
 
     public boolean eliminarTarea(T tarea){
+        if (lista == null) {
+           return false; 
+        }
 
+        if (lista.data.equals(tarea)) {
+            lista = lista.siguiente;
+            return true;
+        }
+
+        Node<T> actual = lista;
+        while (actual.siguiente != null) {
+            if (actual.siguiente.equals(tarea)) {
+                actual.siguiente = actual.siguiente.siguiente;
+                return true;
+            }
+            actual = actual.siguiente;
+        }
+        return false;
     }
 
     public void imprimirTareas(){
