@@ -52,6 +52,14 @@ public class GestordeTareas<T> {
     }
 
     public void invertirTareas(){
-        
+        Node<T> prev = null;
+        Node<T> actual = lista;
+        while (actual != null) {
+            Node<T> sigue = actual.siguiente;
+            actual.siguiente = prev;
+            prev = actual;
+            actual = sigue;
+        }
+        lista = prev;
     }
 }
