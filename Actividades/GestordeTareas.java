@@ -25,7 +25,11 @@ public class GestordeTareas<T> {
     }
 
     public void imprimirTareas(){
-
+        Node<T> actual = lista;
+        while (actual != null) {
+            System.out.println(actual.data);
+            actual = actual.siguiente;
+        }
     }
 
     public int contarTareas(){
