@@ -1,6 +1,6 @@
 package Actividades;
 
-public class GestordeTareas<T> {
+public class GestordeTareas<T extends Comparable<T>> {
     private Node<T> lista;
 
     public GestordeTareas(Node<T> lista){
@@ -47,16 +47,16 @@ public class GestordeTareas<T> {
 
     }
 
-    public Tarea obtenerTareaMasPrioritaria(){
+    public T obtenerTareaMasPrioritaria(){
         if (lista == null) {
             return null;
         }
 
-        Tarea masPrioridad = lista.data;
+        T masPrioridad = lista.data;
         Node<T> actual = lista.siguiente;
 
         while (actual != null) {
-            if (actual.data.getPrioridad() < masPrioridad.getPrioridad()) {
+            if (actual.data.compareTo(masPrioridad) < 0) {
                 masPrioridad = actual.data;
             }
             actual = actual.siguiente;
