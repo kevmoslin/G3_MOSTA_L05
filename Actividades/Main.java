@@ -26,5 +26,9 @@ public class Main {
         System.out.println("\ninvirtiendo lista...");
         gestor.invertirTareas();
         gestor.imprimirTareas();
+
+        System.out.println("\nbuscando tarea mas prirotaria...");
+        Tarea prioritaria = gestor.obtenerTareaMasPrioritaria();
+        System.out.println("\nTarea más prioritaria: " + prioritaria);
     }
 }
