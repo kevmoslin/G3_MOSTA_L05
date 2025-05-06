@@ -14,6 +14,9 @@ public class main {
         System.out.println("lista1 original: ");
         Metodos.imprimirLista(lista1);
 
-        
+        int cont1 = Metodos.contarNodos(lista1);
+        System.out.println("cantidad de nodos lista 1: " + cont1);
+
+        lista1 = 
     }
 }
