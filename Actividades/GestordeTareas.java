@@ -33,6 +33,13 @@ public class GestordeTareas<T> {
     }
 
     public int contarTareas(){
+        int contador = 0;
+        Node<T> actual = lista;
+        while (actual != null) {
+            contador++;
+            actual = actual.siguiente;
+        }
+        return contador;
 
     }
 
