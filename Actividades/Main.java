@@ -9,8 +9,16 @@ public class Main {
         gestor.agregarTarea(new Tarea("pedido", 1));
         gestor.agregarTarea(new Tarea("revisar", 3));
 
+        gestor.imprimirTareas();
+
         gestor.eliminarTarea(new Tarea("envia norificacion", 5));
 
         gestor.imprimirTareas();
+
+        Tarea buscar = new Tarea("pedido", 1);
+        boolean existe = gestor.contieneTarea(buscar);
+        System.out.println("¿la tarea existe?: " + existe);
+
+        
     }
 }
