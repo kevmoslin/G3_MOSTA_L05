@@ -27,6 +27,9 @@ public class main {
         lista2 = Metodos.insertarAlFinal(lista2, 3);
 
         System.out.println("lista2: ");
-        Metodos
+        Metodos.imprimirLista(lista2);
+
+        boolean iguales = Metodos.sonIguales(lista1, lista2);
+        System.out.println("¿las dos listas con iguales?: " + iguales);
     }
 }
