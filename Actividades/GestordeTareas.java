@@ -20,5 +20,27 @@ public class GestordeTareas<T> {
         }
     }
 
-    
+    public boolean eliminarTarea(T tarea){
+
+    }
+
+    public void imprimirTareas(){
+
+    }
+
+    public int contarTareas(){
+
+    }
+
+    public boolean contieneTarea(){
+
+    }
+
+    public T obtenerTareaMasPrioritaria(){
+
+    }
+
+    public void invertirTareas(){
+        
+    }
 }
