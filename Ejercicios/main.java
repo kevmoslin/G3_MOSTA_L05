@@ -10,5 +10,10 @@ public class main {
         lista1 = Metodos.insertarAlFinal(lista1, 1);
         lista1 = Metodos.insertarAlFinal(lista1, 2);
         lista1 = Metodos.insertarAlFinal(lista1, 3);
+
+        System.out.println("lista1 original: ");
+        Metodos.imprimirLista(lista1);
+
+        
     }
 }
