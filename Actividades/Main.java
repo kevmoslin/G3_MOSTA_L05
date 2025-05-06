@@ -8,5 +8,7 @@ public class Main {
         gestor.agregarTarea(new Tarea("envia notificacion", 5));
         gestor.agregarTarea(new Tarea("pedido", 1));
         gestor.agregarTarea(new Tarea("revisar", 3));
+
+        gestor.eliminarTarea(new Tarea("envia norificacion", 5));
     }
 }
