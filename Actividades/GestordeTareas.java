@@ -7,5 +7,9 @@ public class GestordeTareas<T> {
         this.lista = lista;
     }
 
+    public void agregarTarea(T tarea){
+        
+    }
+
     
 }
