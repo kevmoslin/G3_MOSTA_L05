@@ -3,8 +3,8 @@ package Ejercicios;
 import java.util.LinkedList;
 import java.util.List;
 
-public class main {
-    public static void Main(String[] args) {
+public class princiapal {
+    public static void main(String[] args) {
         Node<Integer> lista1 = null;
 
         lista1 = Metodos.insertarAlFinal(lista1, 1);
