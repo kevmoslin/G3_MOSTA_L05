@@ -52,7 +52,7 @@ public class GestordeTareas<T> {
             return null;
         }
 
-        T masPrioridad = lista.data;
+        Tarea masPrioridad = lista.data;
         Node<T> actual = lista.siguiente;
 
         while (actual != null) {
