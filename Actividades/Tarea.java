@@ -31,6 +31,6 @@ public class Tarea implements Comparable<Tarea> {
     }
 
     public String toString(){
-        return getTitulo() + " : " + getPrioridad();
+        return  "Titulo: " + getTitulo() + " Prioridad: " + getPrioridad();
     }
 }
