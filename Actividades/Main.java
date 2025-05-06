@@ -12,8 +12,10 @@ public class Main {
         System.out.println("Tareas:");
         gestor.imprimirTareas();
 
+        System.out.println("Eliminando.....");
         gestor.eliminarTarea(new Tarea("envia norificacion", 5));
 
+        System.out.println("Tareas despues de Eliminar");
         gestor.imprimirTareas();
 
         Tarea buscar = new Tarea("pedido", 1);
