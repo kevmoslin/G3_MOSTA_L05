@@ -16,6 +16,7 @@ public class GestordeTareas<T> {
             while (actual.siguiente != null) {
                 actual = actual.siguiente;
             }
+            actual.siguiente = nuevo;
         }
     }
 
