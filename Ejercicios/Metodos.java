@@ -77,6 +77,10 @@ public class Metodos {
     }
 
     public static <T> void imprimirLista(Node<T> head){
-
+        Node<T> actual = head;
+        while (actual != null) {
+            System.out.println(actual.data);
+            actual = actual.siguiente;
+        }
     }
 }
