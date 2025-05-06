@@ -19,6 +19,7 @@ public class Main {
         boolean existe = gestor.contieneTarea(buscar);
         System.out.println("¿la tarea existe?: " + existe);
 
-        
+        gestor.invertirTareas();
+        gestor.imprimirTareas();
     }
 }
