@@ -32,7 +32,7 @@ public class GestordeTareas<T extends Comparable<T>> {
 
         Node<T> actual = lista;
         while (actual.siguiente != null) {
-            if (actual.siguiente.equals(tarea)) {
+            if (actual.siguiente.data.equals(tarea)) {
                 actual.siguiente = actual.siguiente.siguiente;
                 return true;
             }
