@@ -47,7 +47,7 @@ public class GestordeTareas<T> {
 
     }
 
-    public T obtenerTareaMasPrioritaria(){
+    public Tarea obtenerTareaMasPrioritaria(){
         if (lista == null) {
             return null;
         }
