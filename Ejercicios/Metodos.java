@@ -6,7 +6,12 @@ import java.util.List;
 public class Metodos {
 
     public static <T> boolean buscarElemento(List<T> lista, T valor){
-
+        for(T elemento : lista){
+            if (elemento.equals(valor)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static <T> Node<T> invertirListaEnlazada(Node<T> head){
