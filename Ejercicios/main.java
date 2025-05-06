@@ -17,6 +17,16 @@ public class main {
         int cont1 = Metodos.contarNodos(lista1);
         System.out.println("cantidad de nodos lista 1: " + cont1);
 
-        lista1 = 
+        lista1 = Metodos.invertirListaEnlazada(lista1);
+        System.out.println("lista1 invertida: ");
+        Metodos.imprimirLista(lista1);
+
+        Node<Integer> lista2 = null;
+        lista2 = Metodos.insertarAlFinal(lista2, 1);
+        lista2 = Metodos.insertarAlFinal(lista2, 2);
+        lista2 = Metodos.insertarAlFinal(lista2, 3);
+
+        System.out.println("lista2: ");
+        Metodos
     }
 }
