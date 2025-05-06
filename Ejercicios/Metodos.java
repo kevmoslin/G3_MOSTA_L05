@@ -41,7 +41,13 @@ public class Metodos {
     }
 
     public static <T> int contarNodos(Node<T> head){
-
+        int contador = 0;
+        Node<T> actual = head;
+        while (actual != null) {
+            contador++;
+            actual = actual.siguiente;
+        }
+        return contador;
     }
 
     public static <T> boolean sonIguales(Node<T> head1, Node<T> head2){
