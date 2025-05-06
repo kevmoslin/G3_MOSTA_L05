@@ -48,7 +48,20 @@ public class GestordeTareas<T> {
     }
 
     public T obtenerTareaMasPrioritaria(){
+        if (lista == null) {
+            return null;
+        }
 
+        T masPrioridad = lista.data;
+        Node<T> actual = lista.siguiente;
+
+        while (actual != null) {
+            if (actual.data.getPrioridad() < masPrioridad.getPrioridad()) {
+                masPrioridad = actual.data;
+            }
+            actual = actual.siguiente;
+        }
+        return masPrioridad;
     }
 
     public void invertirTareas(){
