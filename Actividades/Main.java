@@ -9,21 +9,21 @@ public class Main {
         gestor.agregarTarea(new Tarea("pedido", 1));
         gestor.agregarTarea(new Tarea("revisar", 3));
 
-        System.out.println("Tareas:");
+        System.out.println("\nTareas:");
         gestor.imprimirTareas();
 
-        System.out.println("Eliminando.....");
+        System.out.println("\nEliminando.....");
         gestor.eliminarTarea(new Tarea("envia norificacion", 5));
 
-        System.out.println("Tareas despues de Eliminar");
+        System.out.println("\nTareas despues de Eliminar");
         gestor.imprimirTareas();
 
-        System.out.println("Buscando tarea....");
+        System.out.println("\nBuscando tarea....");
         Tarea buscar = new Tarea("pedido", 1);
         boolean existe = gestor.contieneTarea(buscar);
         System.out.println("¿la tarea existe?: " + existe);
 
-        System.out.println("invirtiendo lista...");
+        System.out.println("\ninvirtiendo lista...");
         gestor.invertirTareas();
         gestor.imprimirTareas();
     }
