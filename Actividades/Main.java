@@ -18,10 +18,12 @@ public class Main {
         System.out.println("Tareas despues de Eliminar");
         gestor.imprimirTareas();
 
+        System.out.println("Buscando tarea....");
         Tarea buscar = new Tarea("pedido", 1);
         boolean existe = gestor.contieneTarea(buscar);
         System.out.println("¿la tarea existe?: " + existe);
 
+        System.out.println("invirtiendo lista...");
         gestor.invertirTareas();
         gestor.imprimirTareas();
     }
