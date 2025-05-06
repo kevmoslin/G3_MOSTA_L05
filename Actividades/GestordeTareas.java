@@ -8,7 +8,15 @@ public class GestordeTareas<T> {
     }
 
     public void agregarTarea(T tarea){
-        
+        Node<T> nuevo = new Node<>(tarea);
+        if (lista == null) {
+            lista = nuevo;
+        } else {
+            Node<T> actual = lista;
+            while (actual.siguiente != null) {
+                actual = actual.siguiente;
+            }
+        }
     }
 
     
