@@ -43,8 +43,15 @@ public class GestordeTareas<T extends Comparable<T>> {
 
     }
 
-    public boolean contieneTarea(){
-
+    public boolean contieneTarea(T tarea){
+        Node<T> actual = lista;
+        while (actual != null) {
+            if (actual.data.equals(tarea)) {
+                return true;
+            }
+            actual = actual.siguiente;
+        }
+        return false;
     }
 
     public T obtenerTareaMasPrioritaria(){
