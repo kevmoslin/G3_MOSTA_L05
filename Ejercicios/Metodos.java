@@ -26,8 +26,18 @@ public class Metodos {
         return prev;
     }
 
-    public static <T> void insertarAlFinal(Node<T> head, T valor) {
-
+    public static <T> Node<T> insertarAlFinal(Node<T> head, T valor) {
+        Node<T> nuevo = new Node<T>(valor);
+        if (head == null) {
+            return nuevo;
+        } else{
+            Node<T> actual = head;
+            while (actual.siguiente != null) {
+                actual = actual.siguiente;
+            }
+            actual.siguiente = nuevo;
+            return head;
+        }
     }
 
     public static <T> int contarNodos(Node<T> head){
