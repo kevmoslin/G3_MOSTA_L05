@@ -9,6 +9,7 @@ public class Main {
         gestor.agregarTarea(new Tarea("pedido", 1));
         gestor.agregarTarea(new Tarea("revisar", 3));
 
+        System.out.println("Tareas:");
         gestor.imprimirTareas();
 
         gestor.eliminarTarea(new Tarea("envia norificacion", 5));
